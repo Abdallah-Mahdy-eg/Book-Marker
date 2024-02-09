@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bookmarker</title>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header container pt-5">
+        <h1 class="text-muted py-3">Bookmarker</h1>
+        <hr>
+        <div class="form-project my-4 text-center">
+            <h3 class="py-3">Bookmark your favorite sites</h3>
+            <div>
+                <label for="name" class="font-weight-bold my-3">Site Name</label>
+                <input id="name" class="form-control mx-auto" type="text" placeholder="Bookmarker Name" required>
+            </div>
+            <div>
+                <label for="url" class="font-weight-bold my-3">Site URL</label>
+                <input id="url" class="form-control mx-auto" type="text" placeholder="Website URL" required>
+            </div>
+            <button id="submit" disabled class="btn btn-primary my-5">submit</button>
+            <button id="update" class="btn btn-warning my-5 d-none">Update</button>
+        </div>
+        <hr>
+
+        <input id="Search" oninput="searchBook(this.value);" class="form-control mb-4" type="text" placeholder="Search">
+        <!--  -->
+        <table class="table">
+            <tbody id="tbody">
+            </tbody>
+        </table>
+        <!--  -->
+
+        <footer class="text-muted">
+            <p class="font-weight-bold mt-3">© 2019 Bookmarker Inc.</p>
+        </footer>
+    </div>
+    
+    <!-- /Header -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
